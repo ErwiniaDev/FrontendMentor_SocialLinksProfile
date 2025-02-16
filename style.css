@@ -39,6 +39,7 @@ body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     /* line-height: 1.5; */
+    /* line-height: 1.5; */
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -95,10 +96,12 @@ select {
     --green: hsl(75,94%,57%);
     --white: hsl(0, 0%, 100%);
     --white-transparent: hsl(0, 0%, 80%);
+    --white-transparent: hsl(0, 0%, 80%);
     --grey700: hsl(0, 0%, 20%);
     --grey800: hsl(0, 0%, 12%);
     --grey900: hsl(0, 0%, 8%);
 
+    --font-paragraphs: 0.875rem; /* 14px (1rem = 16px) */
     --font-paragraphs: 0.875rem; /* 14px (1rem = 16px) */
 }
 
