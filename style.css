@@ -38,7 +38,7 @@ body {
     min-height: 100svh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
-    line-height: 1.5;
+    /* line-height: 1.5; */
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -94,15 +94,83 @@ select {
 :root {
     --green: hsl(75,94%,57%);
     --white: hsl(0, 0%, 100%);
+    --white-transparent: hsl(0, 0%, 80%);
     --grey700: hsl(0, 0%, 20%);
     --grey800: hsl(0, 0%, 12%);
     --grey900: hsl(0, 0%, 8%);
 
-    --font-paragraphs: 1.167rem; /* 14px (1rem = 12px) */
+    --font-paragraphs: 0.875rem; /* 14px (1rem = 16px) */
 }
 
 body{
     font-family: 'Inter', serif;
+    font-size: var(--font-paragraphs);
+    background-color: var(--grey900);
+    color: var(--white);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+p{
+    color: var(--white-transparent);
+}
+
+span{
+   color: var(--green);
+   font-size: var(--font-paragraphs);
+}
+
+a{
+    background-color: var(--grey700);
+    color: var(--white);
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 100%;
+    text-decoration: none;
+}
+a:hover,
+a:active{
+    background-color: var(--green);
+    color: var(--grey900);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;    
+    width: 100%;
+}
+
+.card{
+    background-color: var(--grey800);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 35px;
+    gap: 30px;
+    width: 375px;
+}
+
+.card img{
+    border-radius: 50%;
+    width: 90px;
 }
 
 .attribution,
